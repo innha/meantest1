@@ -1,0 +1,31 @@
+{
+  "name": "crud_express_mongodb",
+  "version": "1.0.0",
+  "description": "CRUD node express momgodb app",
+  "main": "server.js",
+  "scripts": {
+    "test": "grunt",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.org"
+  },
+  "keywords": [
+    "mongodb",
+    "express",
+    "angular/ember",
+    "node"
+  ],
+  "author": "Inn HA",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.0",
+    "mongodb": "^2.2.24"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

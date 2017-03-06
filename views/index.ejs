@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>	
+	<ul class="quotes">
+		<% for(var i=0; i<quotes.length; i++) {%>
+			<li class="quote">
+				<span><%= quotes[i].name %></span>
+				<span><%= quotes[i].quote %></span>
+			</li>
+		<%}%>
+	</ul>
+	<div>
+	  <h6>Replace last quote written by Ninmah with a quote written by Innocent</h6>
+	  <button id="update"> Innocent invades! </button>
+	</div>
+	<div>
+	  <h6>Delete Darth Vadar's first quote</h6>
+	  <button id="delete"> Delete first Innocent quote </button>
+	</div>	
+	<form action="/quotes" method="POST">
+		<input type="text" placeholder="name" name="name">
+		<input type="text" placeholder="quote" name="quote">
+		<button type="submit">Submit</button>
+	</form>	
+	<script src="main.js"></script>
+</body>
+</html>
